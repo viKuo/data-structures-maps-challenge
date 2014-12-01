@@ -1,30 +1,33 @@
-# Dictionaries
+# Maps
 
-A dictionary is a collection of key-value pairs, also known as associations.  The associations are the elements of a dictionary.  Within a dictionary, all of the keys much be mutually unique.  On the other hand, different associations can have the same values.
+A Map, also know as a Dictionary, is a collection of key-value pairs. Entries (known as associations) can be added by providing a value and a key that can be used to retrieve that value.
+
+Keys in a map are unique, though multiple keys could store the same value.
 
 
 ## Why is this important?
 
-Dictionaries exist explicitly and/or implicitly in all modern object-oriented programming languages.  In Ruby, hashes are effectively dictionaries. In JavaScript the basic `{}` objects are dictionaries, with the limitation that all object's keys must be strings.
+Storing key:value pairs is a common need in programming, you've done it yourself many times in Ruby. While the `Map` data structure is abstract, and thereby does not specify an underlying implementation, most Maps allow you to access elements by key in _constant time_, aka O(1). This is a valuable feature of Maps: they are both fast, and a convenient data store.
 
-##Releases
+Some form of Map is available in nearly every language.
 
-###Release 0: Write tests
+## Release 0
 
-Write RSpec tests to specify the behavior of the following methods of the `Set` class.
+Find out what the Map data structure is called in Ruby, Javascript and Java. It's vital that you're able to connect the abstract data structure with its language-specific implementation. Commit your answer in a file called `notes.md`.
 
-####Interface
-- `new` - Instantiate a new dictionary
-- `set(key, value)` - Add the value at the key. If the key is already present, then replace the value
-- `get(key)` - Answer the value at the key in the receiver
-  `has_key?(key)` - Answers whether or not the receiver contains the key
-- `has_value?(key)` - Answers whether or not the receiver contains the value
-  `removeKey(key)` - Removes the association at the key, and answrs the value
-- `iterate{ |value, key| block }` - Iterate through all of the elements of the receiver, passing the block each value and key
+## Release 1: Implement Dictionary
 
-###Release 1: Implement `Dictionary`
+Write and test a `Dictionary` class. Do not use Ruby's `Hash` class. Instead, you can rely on any of the Data Structures you have implemented thus far.
 
-Implement the methods from the previous release.  You will new to make an `Association` class.  Use your `ResizableArray` class to hold the state of a `Dictionary`. Feel free to add methods to the `ResizableArray` class to assist you in implementing `Set`.  Do _not_ use a `Hash` object in your implementation.
+Your class should conform to the following interface.
+
+### Interface
+- `Dictionary::new`: Instantiate a new dictionary
+- `Dictionary#set(key, value)`: Add a key-value pair. If the key is already present, replace the value
+- `Dictionary#get(key)`: Retrieve the value stored at `key`
+  `Dictionary#has_key?(key)`: Answer where or not the dictionary has an entry for `key`
+  `Dictionary#remove(key)`: Remove the entry stored at `key`
+- `Dictionary#iterate{ |value, key| block }`: Interate through the Dictionary, passing the block each value and key
 
 ##Resources
 
