@@ -1,15 +1,16 @@
 # Maps
 
-A Map, also know as a Dictionary, is a collection of key-value pairs. Entries (known as associations) can be added by providing a value and a key that can be used to retrieve that value.
+A Map, also know as a Dictionary, is a collection of key-value pairs. Entries (known as associations) can be added by providing a value and a key that can be used to retrieve that value. Keys in a map are unique, though multiple keys could store the same value.
 
-Keys in a map are unique, though multiple keys could store the same value.
-
+Map is also an example of an _un-ordered collection_. You can put keys in, but if you iterate through there is no guarantee as to the order of the values that come out.
 
 ## Why is this important?
 
 Storing key:value pairs is a common need in programming, you've done it yourself many times in Ruby. While the `Map` data structure is abstract, and thereby does not specify an underlying implementation, most Maps allow you to access elements by key in _constant time_, aka O(1). This is a valuable feature of Maps: they are both fast, and a convenient data store.
 
 Some form of Map is available in nearly every language.
+
+While Maps are fast to access, they don't allow for ordered collections. To get a fast _and_ ordered collection we'll look at Trees next.
 
 ## Release 0
 
