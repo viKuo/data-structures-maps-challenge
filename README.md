@@ -16,19 +16,19 @@ While Maps are fast to access, they don't allow for ordered collections. To get 
 
 Find out what the Map data structure is called in Ruby, Javascript and Java. It's vital that you're able to connect the abstract data structure with its language-specific implementation. Commit your answer in a file called `notes.md`.
 
-## Release 1: Implement Dictionary
+## Release 1: Implement Map
 
-Write and test a `Dictionary` class. Do not use Ruby's `Hash` class. Instead, you can rely on any of the Data Structures you have implemented thus far.
+Write and test a `Map` class. Do not use Ruby's `Hash` class. Instead, you can rely on any of the Data Structures you have implemented thus far.
 
 Your class should conform to the following interface.
 
 ### Interface
-- `Dictionary::new`: Instantiate a new dictionary
-- `Dictionary#set(key, value)`: Add a key-value pair. If the key is already present, replace the value
-- `Dictionary#get(key)`: Retrieve the value stored at `key`
-  `Dictionary#has_key?(key)`: Answer where or not the dictionary has an entry for `key`
-  `Dictionary#remove(key)`: Remove the entry stored at `key`
-- `Dictionary#iterate{ |value, key| block }`: Interate through the Dictionary, passing the block each value and key
+- `Map::new`: Instantiate a new Map
+- `Map#set(key, value)`: Add a key-value pair. If the key is already present, replace the value
+- `Map#get(key)`: Retrieve the value stored at `key`
+  `Map#has_key?(key)`: Answer where or not the map has an entry for `key`
+  `Map#remove(key)`: Remove the entry stored at `key`
+- `Map#iterate{ |value, key| block }`: Iterate through the Map, passing the block each value and key
 
 ##Resources
 
