@@ -1,3 +1,3 @@
-def Map
+class Map
 
 end
