@@ -26,8 +26,8 @@ Your class should conform to the following interface.
 - `Map::new`: Instantiate a new Map
 - `Map#set(key, value)`: Add a key-value pair. If the key is already present, replace the value
 - `Map#get(key)`: Retrieve the value stored at `key`
-  `Map#has_key?(key)`: Answer where or not the map has an entry for `key`
-  `Map#remove(key)`: Remove the entry stored at `key`
+- `Map#has_key?(key)`: Answer where or not the map has an entry for `key`
+- `Map#remove(key)`: Remove the entry stored at `key`
 - `Map#iterate{ |value, key| block }`: Iterate through the Map, passing the block each value and key
 
 ##Resources
