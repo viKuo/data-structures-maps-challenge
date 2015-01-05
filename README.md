@@ -6,7 +6,7 @@ Map is also an example of an _un-ordered collection_. You can put keys in, but i
 
 ## Why is this important?
 
-Storing key:value pairs is a common need in programming, you've done it yourself many times in Ruby. While the `Map` data structure is abstract, and thereby does not specify an underlying implementation, most Maps allow you to access elements by key in _constant time_, aka O(1). This is a valuable feature of Maps: they are both fast, and a convenient data store.
+Storing key:value pairs is a common need in programming, you've done it yourself many times in Ruby. While the `Map` data structure is abstract, and thereby does not specify an underlying implementation, most Maps allow you to access elements by key in _constant time_, aka O(1). This is a valuable feature of Maps: they are both fast, and a convenient data store. _Your Map does not need to be constant time in this challenge_.
 
 Some form of Map is available in nearly every language.
 
@@ -24,10 +24,10 @@ Your class should conform to the following interface.
 
 ### Interface
 - `Map::new`: Instantiate a new Map
-- `Map#set(key, value)`: Add a key-value pair. If the key is already present, replace the value
+- `Map#set(key, value)`: Add a key-value pair. If the key is already present, replace the value. Return the value
 - `Map#get(key)`: Retrieve the value stored at `key`
-  `Map#has_key?(key)`: Answer where or not the map has an entry for `key`
-  `Map#remove(key)`: Remove the entry stored at `key`
+- `Map#has_key?(key)`: Answer where or not the map has an entry for `key`
+- `Map#remove(key)`: Remove the entry stored at `key`
 - `Map#iterate{ |value, key| block }`: Iterate through the Map, passing the block each value and key
 
 ##Resources
