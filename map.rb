@@ -5,8 +5,12 @@ class Map
 	end
 
 	def set(key, value)
-		@keys << key
-		@value << values
+		if has_key?(key)
+			@values[@keys.index(key)] = value
+		else
+			@keys << key
+			@value << values
+		end
 	end
 
 	def get(key)
